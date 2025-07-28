@@ -1,0 +1,40 @@
+.navbar {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #000000, #0a0a3a); /* black to dark blue */
+  box-shadow: 0 2px 15px rgba(0, 0, 255, 0.2); /* soft blue glow */
+  border-bottom: 1px solid rgba(0, 102, 255, 0.15);
+}
+
+.icon-spacing {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  color: #7aa7e9; /* soft blue icon color */
+}
+
+.dropdown-menu {
+  background: rgba(5, 10, 40, 0.95); /* deep blue overlay */
+  border: 1px solid rgba(0, 102, 255, 0.1); /* subtle blue border */
+  backdrop-filter: blur(8px); /* soft glass effect */
+}
+
+.dropdown-item {
+  color: #dceeff !important;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background: rgba(0, 102, 255, 0.1) !important;
+  color: #ffffff !important;
+}
+
+.nav-link {
+  color: #c9d8ff !important;
+  transition: all 0.3s ease !important;
+  text-shadow: 0 0 6px rgba(12, 108, 252, 0.15); /* light text glow */
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+  color: #ffffff !important;
+  text-shadow: 0 0 10px rgba(12, 108, 252, 0.25);
+}

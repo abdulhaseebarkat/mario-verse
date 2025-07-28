@@ -1,0 +1,176 @@
+/* Root variables for theme */
+:root {
+    --background-color: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(25, 0, 248, 0.39));
+    --card-color: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(25, 0, 248, 0.39));
+    --text-color: #e0e0e0;
+    --accent-color: #c0c0c0;
+    --highlight: #ebedf0;
+    --card-border: rgba(255, 255, 255, 0.08);
+  }
+  
+ .highlight-section {
+  background: var(--background-color); /* keeps your black-blue gradient */
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 15px var(--highlight); /* glow from highlight color */
+  transition: box-shadow 0.3s ease;
+} 
+  /* General body style */
+  .about-screen {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 3rem;
+  }
+  
+  /* Header styles */
+  .font-big {
+    font-size: 3rem;
+    color: var(--accent-color);
+    letter-spacing: 2px;
+  }
+  
+  .gold-bar {
+    width: 80px;
+    height: 4px;
+    background: var(--highlight);
+    border-radius: 2px;
+  }
+  
+  .lead-text {
+    font-size: 1.2rem;
+    color: var(--text-color);
+  }
+  
+  /* News Cards */
+.news-card {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(12, 108, 252, 0.336));
+  border: 1px solid var(--card-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(6, 3, 209, 0.466);
+  height: 100%;
+
+  animation: gradientShift 6s ease-in-out infinite alternate;
+  background-size: 200% 200%;
+}
+
+
+  
+  .news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(79, 79, 82, 0.466);
+  }
+  
+  .card-header {
+    margin-bottom: 1rem;
+  }
+  
+  .news-date {
+    font-size: 0.85rem;
+    color: var(--highlight);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .news-title {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    margin-top: 0.3rem;
+  }
+  
+  .news-content {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  /* Slide-in animation */
+  .slide-in-top {
+    animation: slideTop 1s ease forwards;
+  }
+  
+  .slide-in-bottom {
+    animation: slideBottom 1s ease forwards;
+  }
+  
+  @keyframes slideTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Optional Sidebar Layout (Uncomment if needed) */
+  /*
+  .sidebar {
+    width: 250px;
+    background-color: var(--card-color);
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 2rem 1rem;
+    box-shadow: 2px 0 8px rgba(255, 255, 255, 0.05);
+    z-index: 10;
+  }
+  
+  .sidebar h2 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 1rem 0;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .sidebar a:hover {
+    color: var(--highlight);
+  }
+  
+  .about-screen.with-sidebar {
+    margin-left: 260px;
+  }
+  */
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .font-big {
+      font-size: 2rem;
+    }
+  
+    .news-title {
+      font-size: 1.1rem;
+    }
+  
+    .news-content {
+      font-size: 0.9rem;
+    }
+  
+    /* .about-screen.with-sidebar {
+      margin-left: 0;
+    } */
+  }
+  
